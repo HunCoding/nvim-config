@@ -116,7 +116,7 @@ M.lsp_client_names = function(shorten)
         end
         return names
     end
-    local clients = vim.lsp.get_clients()
+    local clients = vim.lsp.get_active_clients()
     local client_names = {}
     if not shorten then
         for _, client in pairs(clients) do

@@ -1,3 +1,4 @@
+vim.g.mapleader = ","
 vim.opt.fileencoding = "utf-8"
 vim.opt.fileformat = "unix"
 vim.opt.fileformats = "unix"
