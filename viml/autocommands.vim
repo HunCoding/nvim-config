@@ -1,12 +1,12 @@
 function! AutoSaveWinView()
-    if !exists(
+    if !exists("w:SavedBufView")
         let w:SavedBufView = {}
     endif
-    let w:SavedBufView[bufnr(
+    let w:SavedBufView[bufnr("%")] = winsaveview()
 endfunction
 function! AutoRestoreWinView()
-    let buf = bufnr(
-    if exists(
+    let buf = bufnr("%")
+    if exists("w:SavedBufView") && has_key(w:SavedBufView, buf)
         let v = winsaveview()
         let atStartOfFile = v.lnum == 1 && v.col == 0
         if atStartOfFile && !&diff

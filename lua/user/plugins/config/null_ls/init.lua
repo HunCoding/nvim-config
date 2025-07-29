@@ -8,7 +8,7 @@ local sources = {
     null_ls.builtins.formatting.prettierd,
     null_ls.builtins.formatting.stylua.with({
         extra_args = {
-            "
+            "--config-path",
             vim.fn.expand("~/.stylua.toml"),
         },
     }),

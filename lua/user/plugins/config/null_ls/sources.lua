@@ -22,7 +22,7 @@ M.black = helper.make_builtin({
     generator_opts = {
         command = "black",
         args = {
-            "
+            "--quiet",
             "-",
         },
         to_stdin = true,

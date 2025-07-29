@@ -5,9 +5,9 @@ local se_opts = { silent = true, expr = true }
 map("n", "<Leader><Leader>t", function()
     local gitsigns_status = vim.b.gitsigns_status_dict
     if gitsigns_status then
-        launch_ext_prog("gnome-terminal", "
+        launch_ext_prog("gnome-terminal", "--working-directory", vim.fn.shellescape(gitsigns_status.root))
     else
-        launch_ext_prog("gnome-terminal", "
+        launch_ext_prog("gnome-terminal", "--working-directory", vim.fn.shellescape(vim.fn.expand("%:p:h")))
     end
 end, s_opts)
 map("n", "<Leader><Leader>e", function()

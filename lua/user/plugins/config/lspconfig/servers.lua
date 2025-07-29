@@ -34,16 +34,16 @@ M.specific_configs = {
         cmd = { "dotnet", omnisharp_dll },
     },
     html = {
-        cmd = { "vscode-html-language-server.cmd", "
+        cmd = { "vscode-html-language-server.cmd", "--stdio" },
         init_options = {
             provideFormatter = false,
         },
     },
     cssls = {
-        cmd = { "vscode-css-language-server.cmd", "
+        cmd = { "vscode-css-language-server.cmd", "--stdio" },
     },
     eslint = {
-        cmd = { "vscode-eslint-language-server.cmd", "
+        cmd = { "vscode-eslint-language-server.cmd", "--stdio" },
         root_dir = lspconfig_util.root_pattern(
             ".eslintrc",
             ".eslintrc.js",
