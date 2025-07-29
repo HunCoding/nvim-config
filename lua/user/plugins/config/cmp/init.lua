@@ -58,7 +58,7 @@ cmp.setup({
         ["<C-j>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
         ["<C-k>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
         ["<C-n>"] = cmp.mapping.scroll_docs(4),
-        ["<C-p>"] = cmp.mapping.scroll_docs(-4),
+        ["<C-S-p>"] = cmp.mapping.scroll_docs(-4),
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<C-c>"] = cmp.mapping.close(),
         ["<Tab>"] = cmp.mapping(function(fallback)
