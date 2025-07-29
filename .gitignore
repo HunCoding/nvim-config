@@ -1,0 +1,10 @@
+tags
+ginit.vim
+plugin
+spell
+venv
+
+ultisnips/vim.snippets
+ultisnips/lua.snippets
+ultisnips/tex/temp.snippets
+venv/
